@@ -1,0 +1,11 @@
+{% extends 'Twitter/base.html' %}
+
+{% block content %}
+    {% for tweet in tweets %}
+        <div class="row">
+            <p>{{ tweet.text }}</p>
+            <p>{{ tweet.author }}</p>
+            <p>{{ tweet.created_date }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}
